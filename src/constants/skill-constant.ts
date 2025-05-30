@@ -1,0 +1,41 @@
+import {
+  androidIcon,
+  cIcon,
+  csharpIcon,
+  cssIcon,
+  githubIcon,
+  goIcon,
+  htmlIcon,
+  javaIcon,
+  javascriptIcon,
+  kotlinIcon,
+  mongodbIcon,
+  mysqlIcon,
+  phpIcon,
+  postgreIcon,
+  pythonIcon,
+  reactIcon,
+  typescriptIcon,
+} from '../assets/icons';
+
+const icons = [
+  githubIcon,
+  typescriptIcon,
+  pythonIcon,
+  goIcon,
+  javaIcon,
+  reactIcon,
+  javascriptIcon,
+  androidIcon,
+  kotlinIcon,
+  cssIcon,
+  htmlIcon,
+  mysqlIcon,
+  mongodbIcon,
+  postgreIcon,
+  cIcon,
+  csharpIcon,
+  phpIcon,
+];
+
+export default icons;

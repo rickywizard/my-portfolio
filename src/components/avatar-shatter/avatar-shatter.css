@@ -1,0 +1,51 @@
+.avatar-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+
+.glass-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1px;
+  backdrop-filter: blur(2px);
+  z-index: 20;
+}
+
+.glass-particle.shatter-out {
+  animation: shatter-out 1s ease-out forwards;
+}
+.glass-particle.shatter-in {
+  animation: shatter-in 1s ease-out forwards;
+}
+
+@keyframes shatter-out {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0.3) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shatter-in {
+  0% {
+    transform: translate(var(--x), var(--y)) scale(0.3) rotate(720deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}

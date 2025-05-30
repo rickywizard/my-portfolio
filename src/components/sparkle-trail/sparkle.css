@@ -1,0 +1,27 @@
+.sparkle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: sparkle-fade 1s ease-out forwards;
+  z-index: 50;
+}
+
+@keyframes sparkle-fade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+  50% {
+    transform: scale(1.4);
+    filter: blur(2px);
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+    filter: blur(4px);
+  }
+}

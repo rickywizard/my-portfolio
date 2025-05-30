@@ -1,0 +1,57 @@
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.glow-text {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 16px rgba(186, 85, 211, 0.6), 0 0 24px rgba(186, 85, 211, 0.4);
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+      0 0 16px rgba(186, 85, 211, 0.6), 0 0 24px rgba(186, 85, 211, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(255, 255, 255, 1),
+      0 0 32px rgba(186, 85, 211, 0.8), 0 0 48px rgba(186, 85, 211, 0.6);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+.animate-orbit {
+  animation: orbit 5s linear infinite;
+  transform-origin: center;
+  position: absolute;
+}
+
+.white-glow-icon {
+  filter: brightness(0) invert(1); /* ubah ke putih */
+  transition: transform 0.3s, filter 0.3s;
+  width: 2rem;
+  height: 2rem;
+}
+
+.white-glow-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(0) invert(1) drop-shadow(0 0 6px white);
+}

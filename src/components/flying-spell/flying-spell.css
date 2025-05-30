@@ -1,0 +1,27 @@
+.flying-spell {
+  position: fixed;
+  left: -50px;
+  font-size: 24px;
+  color: #c084fc;
+  animation: fly-right linear forwards;
+  pointer-events: none;
+  z-index: 30;
+  filter: drop-shadow(0 0 6px #fff);
+}
+
+@keyframes fly-right {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) rotate(360deg);
+    opacity: 0;
+  }
+}
