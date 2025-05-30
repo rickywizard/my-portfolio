@@ -14,13 +14,18 @@ function App() {
   const [slideUp, setSlideUp] = useState(false);
 
   useEffect(() => {
-    const slideTimeout = setTimeout(() => setSlideUp(true), 2000);
-    const hideTimeout = setTimeout(() => setLoading(false), 3000);
-
-    return () => {
-      clearTimeout(slideTimeout);
-      clearTimeout(hideTimeout);
+    const handleLoad = () => {
+      setTimeout(() => setSlideUp(true), 100);
+      setTimeout(() => setLoading(false), 1100);
     };
+
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+
+    return () => window.removeEventListener('load', handleLoad);
   }, []);
 
   return (
