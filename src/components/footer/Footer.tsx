@@ -3,7 +3,7 @@ import { githubIcon, instagramIcon, linkedinIcon } from '../../assets/icons';
 
 export const Footer = () => {
   return (
-    <footer className="w-full h-screen md:h-max py-6 bg-gradient-to-b from-yellow-950 to-black flex flex-col items-center justify-center md:justify-start">
+    <footer className="w-full h-screen md:h-max py-6 bg-gradient-to-b from-yellow-950 to-black flex flex-col items-center justify-center md:justify-start text-white">
       {/* Logo dan Nama */}
       <div className="flex items-center justify-center scale-75 md:scale-100">
         <img
