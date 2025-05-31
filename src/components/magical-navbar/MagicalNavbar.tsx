@@ -38,7 +38,6 @@ export const MagicalNavbar = () => {
           <span className="hamburger-icon" />
         </button>
 
-        {/* Logo di tengah */}
         <img
           src={logo}
           alt="Magic Logo"

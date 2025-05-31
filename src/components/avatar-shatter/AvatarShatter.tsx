@@ -53,14 +53,12 @@ export const AvatarShatter = () => {
       onMouseLeave={handleLeave}
       ref={containerRef}
     >
-      {/* Foto di bawah */}
       <img
         src={photo}
         alt="Real Photo"
         className="absolute inset-0 w-full h-full object-cover rounded-lg z-0"
       />
 
-      {/* Avatar di atas */}
       <div className={`avatar-layer ${hovered ? 'fade-out' : 'fade-in'}`}>
         <img
           src={avatar}
