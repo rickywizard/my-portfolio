@@ -10,6 +10,7 @@ import csharpIcon from './csharp.svg';
 import cssIcon from './css3.svg';
 import htmlIcon from './html5.svg';
 import javaIcon from './java.svg';
+import springIcon from './spring.svg';
 import javascriptIcon from './javascript.svg';
 import kotlinIcon from './kotlin.svg';
 import mongodbIcon from './mongodb.svg';
@@ -32,6 +33,7 @@ export {
   cssIcon,
   htmlIcon,
   javaIcon,
+  springIcon,
   javascriptIcon,
   kotlinIcon,
   mongodbIcon,
