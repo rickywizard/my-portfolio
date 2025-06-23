@@ -71,7 +71,7 @@ export const HeroSection = () => {
           {/* Download CV Button */}
           <MagicReveal delay={0.8}>
             <a
-              href="https://drive.google.com/file/d/1khvfKrrkXCcKgD3W0DbXUewz-niIlazt/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/1nxrrl2J4CA_mvqUYEKZV6e57Z2icf2jm?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent border border-white text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 z-10 white-glow-icon"
